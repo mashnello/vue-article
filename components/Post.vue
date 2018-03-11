@@ -1,6 +1,6 @@
 <template>
   <a href="#" class="post">
-    <img class="post__image" :src="'https://lorempixel.com/600/300/cats/' + id" alt="">
+    <img class="post__image" :src="'https://lorempixel.com/600/300/cats/' + id + '/'" alt="">
     <h4 class="post__title">{{ title }}</h4>
     <p class="post__info">
       <img class="icon" src="user.svg" alt="">
