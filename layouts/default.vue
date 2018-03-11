@@ -3,7 +3,7 @@
     <div class="container">
       <nuxt/>
     </div>
-    <div class="credit">Icons made by 
+    <div class="credits">Icons made by 
       <a href="https://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a>,
       <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>,
       <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>
@@ -40,7 +40,7 @@ html {
   width: 100%;
 }
 
-.credit, .credit a {
+.credits, .credits a {
   font-size: 9px;
   color: #484c4e;
   margin-top: 5px;
@@ -48,7 +48,7 @@ html {
 
 .icon {
   width: 12px;
-  height: 11px;
+  height: 12px;
   vertical-align: middle;
 }
 

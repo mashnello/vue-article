@@ -42,6 +42,7 @@ export default {
     margin: 20px 0;
     line-height: 1.6;
     font-size: 12px;
+    text-transform: capitalize;
   }
 
   &__info {

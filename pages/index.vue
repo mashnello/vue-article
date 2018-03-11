@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <article-content :article="article" :commentsCount="comments.length" />
-    <related-posts :posts="posts" />
+    <related-posts :articles="posts" />
     <comments :comments="comments" />
   </main>
 </template>
@@ -25,7 +25,7 @@ export default {
 
     return {
       article: article.data,
-      posts: posts.data.slice(5, 8),
+      posts: posts.data.slice(0, 6),
       comments: comments.data
     }
   }
