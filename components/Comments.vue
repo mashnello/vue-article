@@ -2,11 +2,13 @@
   <section class="comments-wrapper">
     <h3 class="title">5 Comments</h3>
     <div class="comments">
-      <comment />
-      <comment class="replied" />
-      <comment class="replied" />
-      <comment />
-      <comment />
+      <comment
+        v-for="comment in comments"
+        :key="comment.id"
+        :id="comment.id"
+        :name="comment.name"
+        :body="comment.body"
+      />
     </div>
   </section>
 </template>
@@ -17,6 +19,9 @@ import Comment from "~/components/Comment.vue";
 export default {
   components: {
     Comment
+  },
+  props: {
+    comments: Array
   }
 };
 </script>
@@ -31,5 +36,4 @@ export default {
     margin: 15px 0;
   }
 }
-
 </style>

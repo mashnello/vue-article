@@ -1,14 +1,24 @@
 <template>
-  <div class="comment">
-    <img class="comment__avatar" src="https://lorempixel.com/50/50/people/3/" alt="">
+  <div :class="'comment ' + (id % 2 ? '' : 'replied')">
+    <img class="comment__avatar" :src="'http://lorempixel.com/50/50/people/' + id" alt="">
     <div class="comment__content">
-      <p class="comment__author">admin</p>
+      <p class="comment__author">{{ name }}</p>
       <p class="comment__date">January 5, 2018 at 6:02 am</p>
-      <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam delectus doloremque eaque nihil aliquid tenetur, iusto harum deleniti sequi velit.</p>
+      <p class="comment__text">{{ body }}</p>
       <button class="comment__button">Reply</button>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    id: Number,
+    name: String,
+    body: String
+  }
+}
+</script>
 
 <style lang="less">
 .comments {
