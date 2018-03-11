@@ -24,6 +24,7 @@ export default {
   margin: 30px 0;
   width: 32%;
   text-decoration: none;
+  display: block;
 
   @media (max-width: 600px) {
     width: 100%;
