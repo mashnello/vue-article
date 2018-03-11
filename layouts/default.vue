@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="wrapper">
+    <div class="container">
+      <nuxt/>
+    </div>
   </div>
 </template>
 
@@ -21,32 +23,15 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.wrapper {
+  background-color: #f2f4f5;
+  padding: 20px 50px;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 0 3px #e8ebec;
+  padding: 40px 30px;
+  width: 100%;
 }
 </style>
