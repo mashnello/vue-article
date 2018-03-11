@@ -2,7 +2,7 @@
   <div>
     <h4 class="about-author">About Author</h4>
     <div class="about">
-      <img class="about__avatar" src="https://lorempixel.com/50/50/people/3/" alt="">
+      <img class="about__avatar" src="https://lorempixel.com/50/50/cats/7/" alt="">
       <div class="about__body">
         <p class="about__author">John Does</p>
         <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nobis voluptas nulla adipisci aperiam at velit facilis, doloribus totam minus, consequatur atque optio harum corporis esse tenetur nisi quaerat deleniti explicabo dolorem odio ut. Unde ratione sit omnis aspernatur dignissimos?</p>

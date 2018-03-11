@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <article-content />
-    <related-posts />
+    <related-posts :posts="posts" />
     <comments :comments="comments" />
   </main>
 </template>
@@ -19,8 +19,12 @@ export default {
     Comments
   },
   async asyncData () {
-    const { data } = await axios.get('https://jsonplaceholder.typicode.com/comments?postId=1')
-    return { comments: data }
+    const comments = await axios.get('https://jsonplaceholder.typicode.com/posts/1/comments');
+    const posts = await axios.get('https://jsonplaceholder.typicode.com/photos/');
+    return {
+      comments: comments.data,
+      posts: posts.data.slice(5, 8)
+    }
   }
 };
 </script>

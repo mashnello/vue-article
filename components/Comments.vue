@@ -1,6 +1,6 @@
 <template>
   <section class="comments-wrapper">
-    <h3 class="title">5 Comments</h3>
+    <h3 class="title">{{comments.length}} Comments</h3>
     <div class="comments">
       <comment
         v-for="comment in comments"
