@@ -16,9 +16,17 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 600px) {
+    display: block;
+  }
+
   .post {
     margin: 30px 0;
     width: 32%;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
 
     &__image {
       width: 100%;

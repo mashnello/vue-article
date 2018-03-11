@@ -34,4 +34,13 @@ html {
   padding: 40px 30px;
   width: 100%;
 }
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 20px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
 </style>

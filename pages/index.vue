@@ -22,6 +22,6 @@ export default {
 
 <style>
 .main {
-  width: 700px;
+  max-width: 700px;
 }
 </style>
