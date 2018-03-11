@@ -3,6 +3,11 @@
     <div class="container">
       <nuxt/>
     </div>
+    <div class="credit">Icons made by 
+      <a href="https://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a>,
+      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>,
+      <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </div>
 </template>
 
@@ -33,6 +38,18 @@ html {
   box-shadow: 0 0 3px #e8ebec;
   padding: 40px 30px;
   width: 100%;
+}
+
+.credit, .credit a {
+  font-size: 9px;
+  color: #484c4e;
+  margin-top: 5px;
+}
+
+.icon {
+  width: 12px;
+  height: 11px;
+  vertical-align: middle;
 }
 
 @media (max-width: 600px) {

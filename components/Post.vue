@@ -3,7 +3,9 @@
     <img class="post__image" :src="'https://lorempixel.com/600/300/cats/' + id" alt="">
     <h4 class="post__title">{{ title }}</h4>
     <p class="post__info">
+      <img class="icon" src="user.svg" alt="">
       <span class="post__author">John Does</span>
+      <img class="icon" src="calendar-page-empty.svg" alt="">
       <span class="post__date">January 15, 2018</span>
     </p>
   </a>
@@ -49,7 +51,7 @@ export default {
     font-size: 10px;
 
     span {
-      margin: 0 10px;
+      margin: 0 15px 0 5px;
     }
   }
 }

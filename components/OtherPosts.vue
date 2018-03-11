@@ -1,11 +1,13 @@
 <template>
   <div class="other-posts">
     <a href="#" class="prev">
+      <img class="icon" src="left-arrow.svg" alt="">
       <p class="other-posts__arrow">Previous Post</p>
       <p class="other-posts__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veniam dolorem eius modi, consectetur beatae.</p>
     </a>
     <a href="#" class="next">
       <p class="other-posts__arrow">Next Post</p>
+      <img class="icon" src="right-arrow.svg" alt="">
       <p class="other-posts__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </a>
   </div>
@@ -26,7 +28,7 @@
       text-align: left;
 
       .other-posts__arrow {
-        margin-left: 10px;
+        margin-left: 5px;
       }
     }
 
@@ -34,7 +36,7 @@
       text-align: right;
 
       .other-posts__arrow {
-        margin-right: 10px;
+        margin-right: 5px;
       }
     }
   }
@@ -44,6 +46,7 @@
     color: #aeb6b9;
     font-style: italic;
     margin-bottom: 10px;
+    display: inline-block;
   }
 
   .other-posts__title {

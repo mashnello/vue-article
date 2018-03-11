@@ -4,8 +4,11 @@
       What Fashion Editors Are Buying for Every Kid on Our Holiday List
     </h1>
     <p class="article__info">
+      <img class="icon" src="user.svg" alt="">
       <span class="author">John Does</span>
+      <img class="icon" src="calendar-page-empty.svg" alt="">
       <span class="date">January 5, 2018</span>
+      <img class="icon" src="speech-bubbles-comment-option.svg" alt="">
       <span class="comments">{{ commentsCount }}</span>
     </p>
     <img class="article__image" src="/main.png" alt="">
@@ -49,7 +52,7 @@ export default {
     span {
       font-size: 11px;
       color: #aeb6b9;
-      margin-left: 20px;
+      margin: 0 15px 0 5px;
     }
   }
 
