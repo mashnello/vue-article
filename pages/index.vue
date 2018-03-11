@@ -1,21 +1,27 @@
 <template>
   <main class="main">
     <article-content />
-    <related-articles />
-    <article-comments />
+    <related-posts />
+    <comments />
   </main>
 </template>
 
 <script>
 import ArticleContent from "~/components/ArticleContent.vue";
-import RelatedArticles from "~/components/RelatedArticles.vue";
-import ArticleComments from "~/components/ArticleComments.vue";
+import RelatedPosts from "~/components/RelatedPosts.vue";
+import Comments from "~/components/Comments.vue";
 
 export default {
   components: {
     ArticleContent,
-    RelatedArticles,
-    ArticleComments
+    RelatedPosts,
+    Comments
   }
 };
 </script>
+
+<style>
+.main {
+  width: 700px;
+}
+</style>
