@@ -1,6 +1,7 @@
-# article
+# vue-article
 
 > Nuxt.js project
+> [Demo](https://elated-lalande-ef9b2b.netlify.com/)
 
 ## Build Setup
 
