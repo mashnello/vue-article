@@ -6,12 +6,12 @@
     <p class="article__info">
       <span class="author">John Does</span>
       <span class="date">January 5, 2018</span>
-      <span class="comments">5</span>
+      <span class="comments">{{ commentsCount }}</span>
     </p>
     <img class="article__image" src="/main.png" alt="">
     <p class="article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia, tempore nam exercitationem dolores, iure cupiditate cumque amet fuga est tenetur error voluptate saepe quas molestias beatae, consequuntur porro debitis nobis eos! Eaque, rerum nesciunt ipsa provident est reiciendis error natus impedit, modi nam nisi id voluptatibus cupiditate, molestiae ullam.</p>
-    <h2 class="article__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nobis.</h2>
-    <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestiae quam hic repellat laudantium illo in, omnis corrupti illum deleniti labore corporis, ab magni modi mollitia eaque suscipit dolorem nostrum? Nemo deserunt vitae unde iure quae voluptatum consectetur ratione, facere perspiciatis ex repellendus. Alias, sequi. Iure autem aliquid molestiae eum distinctio laboriosam facere consequuntur veniam qui, rerum sed, at error libero. Quos doloribus eligendi eos, sapiente quae unde voluptatum ex neque voluptate tenetur officiis quasi, asperiores sunt quo vero excepturi saepe? Dolorem id quidem ratione asperiores nostrum, optio saepe provident accusantium veniam ut aliquid expedita nemo sunt excepturi tempora tenetur.</p>
+    <h2 class="article__subtitle">{{ article.title }}</h2>
+    <p class="article__text">{{ article.body }}</p>
     <about-author />
     <other-posts />
   </section>
@@ -25,6 +25,10 @@ export default {
   components: {
     AboutAuthor,
     OtherPosts
+  },
+  props: {
+    commentsCount: Number,
+    article: Object
   }
 };
 </script>
@@ -60,6 +64,7 @@ export default {
     color: #414648;
     line-height: 1.6;
     font-size: 24px;
+    text-transform: capitalize;
   }
 
   .article__image {

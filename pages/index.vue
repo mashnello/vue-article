@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <article-content />
+    <article-content :article="article" :commentsCount="comments.length" />
     <related-posts :posts="posts" />
     <comments :comments="comments" />
   </main>
@@ -19,11 +19,14 @@ export default {
     Comments
   },
   async asyncData () {
-    const comments = await axios.get('https://jsonplaceholder.typicode.com/posts/1/comments');
+    const article = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
     const posts = await axios.get('https://jsonplaceholder.typicode.com/photos/');
+    const comments = await axios.get('https://jsonplaceholder.typicode.com/posts/1/comments');
+
     return {
-      comments: comments.data,
-      posts: posts.data.slice(5, 8)
+      article: article.data,
+      posts: posts.data.slice(5, 8),
+      comments: comments.data
     }
   }
 };
