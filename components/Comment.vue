@@ -1,6 +1,6 @@
 <template>
   <div :class="'comment ' + (id % 2 ? '' : 'replied')">
-    <img class="comment__avatar" :src="'http://lorempixel.com/50/50/cats/' + id" alt="">
+    <img class="comment__avatar" :src="'https://lorempixel.com/50/50/cats/' + id" alt="">
     <div class="comment__content">
       <p class="comment__author">{{ name }}</p>
       <p class="comment__date">January 5, 2018 at 6:02 am</p>

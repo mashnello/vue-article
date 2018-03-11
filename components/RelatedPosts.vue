@@ -72,7 +72,9 @@ export default {
 
     .controls__button {
       border: 1px solid #eef0f1;
+      background-color: #ffffff;
       margin-left: 3px;
+      padding: 0;
       width: 25px;
       height: 25px;
     }
@@ -90,6 +92,7 @@ export default {
 
     @media (max-width: 600px) {
       display: block;
+      height: 300px;
     }
   }
 }
